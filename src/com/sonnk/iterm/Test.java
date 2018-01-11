@@ -1,4 +1,4 @@
-package com.sburlyaev.cmd.plugin;
+package com.sonnk.iterm;
 
 public class Test {
 

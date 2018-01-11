@@ -1,4 +1,4 @@
-package com.sburlyaev.cmd.plugin;
+package com.sonnk.iterm;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
@@ -49,7 +49,8 @@ public class OpenCmd extends AnAction {
                 break;
 
             case "mac":
-                command = "open -a Terminal.app --new --fresh --args cd " + projectBaseDir;
+                //command = "open -a Terminal.app --new --fresh --args cd " + projectBaseDir;
+                command = "open " + projectBaseDir + " -a iTerm";
                 break;
 
             default:

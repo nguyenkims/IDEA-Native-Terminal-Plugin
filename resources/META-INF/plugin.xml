@@ -1,15 +1,17 @@
 <idea-plugin>
-  <id>com.sburlyaev.terminal.plugin</id>
+  <id>com.sonnk.iterm</id>
   <name>Native Terminal Plugin</name>
   <version>0.0.8</version>
-  <vendor email="sburlyaev2016@gmail.com" url="https://github.com/sburlyaev89">Sergey Burlyaev</vendor>
+  <vendor email="nguyenkims@hotmail.com" url="https://github.com/nguyenkims/IDEA-Native-Terminal-Plugin">Son NK</vendor>
 
   <description><![CDATA[
-      Native Terminal Plugin.<br>
+      ITerm Plugin.<br>
+      Tweaked from https://github.com/sburlyaev89/IDEA-Native-Terminal-Plugin to launch Iterm instead of Terminal on Mac
     ]]>
   </description>
 
   <change-notes><![CDATA[
+      - Open Iterm instead of Terminal on Mac
       - Added Mac support.<br>
       - Added Linux support (gnome-terminal).<br>
       - Added the Command Prompt icon to the Main Tool Bar.<br>
@@ -28,13 +30,14 @@
   </extensions>
 
   <actions>
-      <action id="com.sburlyaev.cmd.plugin.OpenCmd"
-              class="com.sburlyaev.cmd.plugin.OpenCmd"
+      <action id="com.sonnk.iterm.OpenCmd"
+              class="com.sonnk.iterm.OpenCmd"
               text="Terminal"
               description=""
-              icon="/cmd-icon-16.png">
+              icon="/logo-iterm.jpg">
         <add-to-group group-id="NavBarToolBar" anchor="first" />
         <add-to-group group-id="MainToolBar" anchor="last" />
+        <keyboard-shortcut first-keystroke="control shift i" keymap="$default"/>
       </action>
   </actions>
 
