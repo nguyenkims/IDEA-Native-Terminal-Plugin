@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>com.sonnk.iterm</id>
-  <name>Native Terminal Plugin</name>
+  <name>Iterm Plugin</name>
   <version>0.0.8</version>
   <vendor email="nguyenkims@hotmail.com" url="https://github.com/nguyenkims/IDEA-Native-Terminal-Plugin">Son NK</vendor>
 
